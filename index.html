@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Biały Kwadrat, Nie Kliknij Go!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game">
+      <div id="timer" class="timer">
+        <p class="text">TIME LEFT: <span id="time">-</span></p>
+      </div>
+      <main id="board" class="board">
+        <button
+          id="0"
+          class="button-empty"
+          onclick="handleTileClick(0)"
+        ></button>
+        <button
+          id="1"
+          class="button-empty"
+          onclick="handleTileClick(1)"
+        ></button>
+        <button
+          id="2"
+          class="button-empty"
+          onclick="handleTileClick(2)"
+        ></button>
+        <button
+          id="3"
+          class="button-empty"
+          onclick="handleTileClick(3)"
+        ></button>
+        <button
+          id="4"
+          class="button-empty"
+          onclick="handleTileClick(4)"
+        ></button>
+        <button
+          id="5"
+          class="button-empty"
+          onclick="handleTileClick(5)"
+        ></button>
+        <button
+          id="6"
+          class="button-empty"
+          onclick="handleTileClick(6)"
+        ></button>
+        <button
+          id="7"
+          class="button-empty"
+          onclick="handleTileClick(7)"
+        ></button>
+        <button
+          id="8"
+          class="button-empty"
+          onclick="handleTileClick(8)"
+        ></button>
+      </main>
+      <div class="score-box" id="scoreBox">
+        <p class="text">SCORE: <span id="score">0</span></p>
+        <p class="text">MISS: <span id="miss">0</span></p>
+      </div>
+      <button onclick="darkMode()">Dark Mode</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
