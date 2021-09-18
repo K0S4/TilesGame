@@ -1,5 +1,5 @@
 let highlightedTileNumber = 0;
-let timeLeft = 1024;
+let timeLeft = 30;
 let score = 0;
 let miss = 0;
 let buttonActiveClass = "button-active";
@@ -8,22 +8,12 @@ startingTile.classList.add(buttonActiveClass);
 
 // dark mode
 
-function darkMode() {
-  for (let elementId = 8; elementId >= 0; elementId--) {
-    let element = document.getElementById(elementId);
-    element.classList.toggle("dark-button-empty");
-  }
-  let x = document.getElementById("0");
-  var y = x.classList.contains("dark-button-empty");
-  console.log(y);
-  if (y = 1) {
-    buttonActiveClass = "dark-button-active";
-    console.log("1");
-  } else {
-    buttonActiveClass = "button-active";
-    console.log("0");
-  }
+function toogleTheme(tileId) {
+  let element = document.getElementById("body");
+  element.classList.toggle("dark-theme");
+  
 }
+
 
 //logic
 
@@ -33,13 +23,12 @@ function getRandomNumber() {
 
 function highlightTile(tileId) {
   const tileToClick = document.getElementById(tileId);
-  tileToClick.classList.add(buttonActiveClass);
+  tileToClick.classList.add("button-active");
 }
 
 function clearHighlightTile(tileId) {
   const activatedTile = document.getElementById(tileId);
   activatedTile.classList.remove("button-active");
-  activatedTile.classList.remove("dark-button-active");
 
 }
 
