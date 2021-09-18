@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 @keyframes backgroundAnimation {
   0% {
     background-color: #d428cc;
@@ -10,6 +11,7 @@
     background-color: #d428cc;
   }
 }
+
 @keyframes darkBackgroundAnimation {
   0% {
     background-color: #0f0038;
@@ -21,6 +23,7 @@
     background-color: #0f0038;
   }
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -42,6 +45,7 @@ p {
   margin: 0;
   padding: 0;
 }
+
 
 .board {
   display: flex;
@@ -68,7 +72,7 @@ p {
   cursor: pointer;
 }
 
-.theme-button {
+.theme-button{
   width: 100px;
   height: 30px;
   background-color: #2b2b2b;
@@ -113,14 +117,16 @@ p {
 }
 
 body.dark-theme {
+  
   animation-name: darkBackgroundAnimation;
   color: #ffffff;
-}
-body.dark-theme .button-empty {
-  background-color: #1d1d1d;
-}
-body.dark-theme .button-active {
-  background-color: #ffffff;
+
+  .button-empty {
+    background-color: #1d1d1d;
+  }
+  .button-active {
+    background-color: #ffffff;
+  }
+
 }
 
-/*# sourceMappingURL=style.css.map */
