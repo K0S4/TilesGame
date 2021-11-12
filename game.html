@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Biały Kwadrat, Nie Kliknij Go!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <div id="game">
+      <div id="timer" class="timer">
+        <p class="text">TIME LEFT: <span id="time"></span></p>
+      </div>
+      <main id="board" class="board">
+        <button
+          id="0"
+          class="button-empty"
+          onclick="handleTileClick(0)"
+        ></button>
+      </main>
+      <div class="score-box" id="scoreBox">
+        <p class="text">SCORE: <span id="score">0</span></p>
+        <p class="text">MISS: <span id="miss">0</span></p>
+      </div>
+      <button class="theme-button" onclick="toogleTheme()">Dark Mode</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
