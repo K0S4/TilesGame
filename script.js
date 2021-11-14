@@ -11,6 +11,11 @@ let buttonActiveClass = "button-active";
 
 startingTile.classList.add(buttonActiveClass);
 
+
+let board = document.getElementById("board");
+board.classList.toggle(`board${boardSizeNumber}`)
+
+
 //board generation
 for (i = 1; i < boardSizeNumber; i++) {
   document.getElementById("board").innerHTML += ` <button
@@ -78,7 +83,7 @@ function endGame() {
   document.getElementById("game").innerHTML = "";
   document.getElementById(
     "game"
-  ).innerHTML = `<div class="endscreen"> <p class="endscreen-title">TIME'S UP</p class="endscreen-text"> <p class="endscreen-text">SCORE: ${score}</p> <p class="endscreen-text">MISS: ${miss}</p> <p class="endscreen-text">ACCURACY: ${acc}%</p> </div>`;
+  ).innerHTML = `<div class="endscreen"> <p class="endscreen-title">TIME'S UP</p class="endscreen-text"> <p class="endscreen-text">SCORE: ${score}</p> <p class="endscreen-text">MISS: ${miss}</p> <p class="endscreen-text">ACCURACY: ${acc}%</p> <a href=index.html class="restart">RESTART</a></div>`;
 }
 
 // timer

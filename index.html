@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>Biały Kwadrat, Nie Kliknij Go!</title>
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="icon.png">
   </head>
-  <h1>TilesGame</h1>
-  <p>Timer</p>
-  <input type="number" id="timerDurationInput">
-  <p>Tiles</p>
-  <input type="range" id="numberLinkInput" min="2" max="6" value="3" onchange="updateTextInput(this.value);" >
-  <p id="rangeInputDisplay">3x3</p>
-  <a onclick='gameParameters()' href="#" id="startGameLink">START</a>
+  <h1 class="endscreen-title">TilesGame</h1>
+  <p class="text">Timer</p>
+  <input type="number" id="timerDurationInput" class="deafult-input">
+  <p class="text">Board Size</p>
+  <div class="range-container">
+  <input type="range" id="numberLinkInput" min="2" max="6" value="3" onchange="updateTextInput(this.value);" class="deafult-input-range" >
+  </div>
+  <p id="rangeInputDisplay" class="text">3x3</p>
+  <a onclick='gameParameters()' class="text" href="#" id="startGameLink">START</a>
   <script src="script.js"></script>
   </body>
 </html>
