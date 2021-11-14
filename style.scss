@@ -46,7 +46,6 @@ p {
   padding: 0;
 }
 
-
 .board {
   display: flex;
   justify-content: center;
@@ -72,7 +71,7 @@ p {
   cursor: pointer;
 }
 
-.theme-button{
+.theme-button {
   width: 100px;
   height: 30px;
   background-color: #2b2b2b;
@@ -96,8 +95,19 @@ p {
   margin: 5px;
 }
 
+.text:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.text:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .endscreen {
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .endscreen-title {
@@ -117,7 +127,6 @@ p {
 }
 
 body.dark-theme {
-  
   animation-name: darkBackgroundAnimation;
   color: #ffffff;
 
@@ -127,6 +136,86 @@ body.dark-theme {
   .button-active {
     background-color: #ffffff;
   }
-
 }
 
+
+.deafult-input {
+  background-color: #1d1d1d;
+  color: #ffffff;
+  border-color: #000000;
+  border-radius: 1px;
+  font-family: "Ubuntu", sans-serif;
+  width: 250px;
+  height: 15px;
+}
+
+.deafult-input-range {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 5px;
+  background: #000000;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.deafult-input-range::-webkit-slider-thumb  {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.deafult-input-range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  cursor: pointer;
+}
+
+
+main.board4 {
+  .button-empty {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+main.board16 {
+  .button-empty {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+main.board25 {
+  .button-empty {
+    width: 108px;
+    height: 108px;
+  }
+}
+
+main.board36 {
+  .button-empty {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.restart {
+  display: block;
+  color: #1d1d1d;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.restart :link{
+  color: #1d1d1d;
+}
+
+.restart :visited{
+  color: #1d1d1d;
+}
